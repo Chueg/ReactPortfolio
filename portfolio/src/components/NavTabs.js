@@ -2,9 +2,19 @@ import React from 'react';
 import 'bulma/css/bulma.min.css';
 import '../css/style.css'
 
+
+
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
+
+
+  const rimboid = () => {
+    const navbarMenu = document.querySelector('#navbarBasicExample');
+    navbarMenu.classList.toggle('is-active');
+  console.log("clicked");
+  }
+
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
@@ -12,7 +22,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></img>
     </a>
 
-    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={rimboid}>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -45,7 +55,9 @@ function NavTabs({ currentPage, handlePageChange }) {
     </div>
   </div>
 </nav>
+
   );
+  
 }
 
 export default NavTabs;
