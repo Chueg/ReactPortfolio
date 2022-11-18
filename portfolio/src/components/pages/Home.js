@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bulma/css/bulma.min.css';
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
         vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
         fames ac ante ipsum primis in faucibus.
       </p>
+      <button className ="button is-primary is-large">
+           Button
+      </button> 
     </div>
   );
 }
