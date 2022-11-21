@@ -1,9 +1,61 @@
+html{
+    background-color: #242424;
+    color:white;
+}
+body{
+    color: white;
+}
 .rumpus{
-    background-color: #E1BBC9;
+    background-color: gray;
     font-size: 20px;
 
 }
+.navbar-brand{
+    background-color: gray;
+}
+
+h1{
+    font-size: 60px;
+    color: gold;
+    background-color: black;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 40%;
+    margin-top: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+
+
+    
+}
+
+h3{
+    font-size: 50px;
+    font-family: monospace;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1023px){
+    .rampus{
+        flex-direction: column;
+    display: flex;
+ 
+    }
+    .rumpus{
+        font-size: 30px;
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 0px;
+
+    }
+}
+
 .rampus a{
     padding: 30px;
     padding-left: 30px;
+    background-color: darkseagreen;
+    font-size: 40px;
 }
