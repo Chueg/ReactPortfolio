@@ -28,6 +28,12 @@ function NavTabs({ currentPage, handlePageChange }) {
 
   <div id="navbarBasicExample" className="navbar-menu rumpus">
     <div className="navbar-start rampus">
+    <a  href="#about"
+          onClick={() => handlePageChange('About')}
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+        About Me
+      </a>
       <a  href="#home"
           onClick={() => handlePageChange('Home')}
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -36,12 +42,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         Portfolio
       </a>
 
-      <a  href="#about"
-          onClick={() => handlePageChange('About')}
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
-        About Me
-      </a>
+      
 
       <a  href="#blog"
           onClick={() => handlePageChange('Blog')}
