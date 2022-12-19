@@ -8,9 +8,7 @@ body{
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 2.5rem;   
-    background-color: azure;         /* Footer height */
+    width: 100%;        /* Footer height */
   }
 ul{
     list-style: none;
@@ -34,6 +32,24 @@ form{
     background-color: gray;
 }
 
+.binky{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.stinky{
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 30px;
+}
+
 h1{
     font-size: 60px;
     color: gold;
@@ -52,6 +68,54 @@ h1{
     
 }
 
+.container {
+    display: table;
+    margin-left: 100px;
+    margin-top: 80px;
+    cursor: pointer;
+  }
+  .subcontainer {
+    position: relative;
+    background-color: #2f3238;
+    overflow:hidden;
+  }
+  .containerImage {
+    position: relative;
+    background-color: #17819c;
+  }
+  .title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+  }
+  .subtitleText {
+    position: relative;
+    left: -50%;
+    padding: 30px 40px;
+    border: 3px solid white;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .img {
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+  }
+
 h3{
     font-size: 50px;
     font-family: monospace;
@@ -62,20 +126,65 @@ h3{
     .rampus{
         flex-direction: column;
     display: flex;
+    font-size: 10px;
+    
  
     }
+    .stinky{
+      margin-top:30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      font-size: 17px;
+  }
     .rumpus{
-        font-size: 30px;
+        font-size: 20px;
         margin: 0px;
         text-align: center;
         padding-bottom: 0px;
 
     }
-}
+    
+    .binky{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+    h1{
+      font-size: 30px;
+      color: gold;
+      background-color: black;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 40%;
+      margin-top: 40px;
+      padding: 5px;
+      border-radius: 10px;
+      font-weight: bolder;
+  
+  
+      
+  }
+  footer {
+    display:none;
+    bottom: 0;
+    width: 100%;        /* Footer height */
+  }
+    }
 
 .rampus a{
-    padding: 30px;
+    padding: 15px;
     padding-left: 30px;
     background-color: darkseagreen;
-    font-size: 40px;
+    font-size: 30px;
+    
 }

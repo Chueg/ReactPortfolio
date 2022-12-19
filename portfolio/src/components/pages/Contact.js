@@ -66,7 +66,7 @@ export default function Contact() {
           <button id="submit" onClick={swilton} >Submit</button>
           
         </form>
-        <p id="response">Big Ween</p>
+        <p className = "binky"id="response"></p>
     </div>
   );
 }
