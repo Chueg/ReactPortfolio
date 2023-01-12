@@ -59,13 +59,17 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
+
+
       <form>
+        
           <p>Name:<input placeholder="name" id="name" /></p>
           <p>Email:<input placeholder="email" id="email" /></p>
           <p>Message:<input placeholder="message" id="message" /></p>
           <button id="submit" onClick={swilton} >Submit</button>
           
         </form>
+        <p className='stinky'>Contact me at <br></br>Email: drewtex@gmail.com<br></br>Github: https://github.com/Chueg/</p>
         <p className = "binky"id="response"></p>
     </div>
   );
