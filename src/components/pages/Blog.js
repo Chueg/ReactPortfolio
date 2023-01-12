@@ -6,14 +6,14 @@ import '../../css/style.css'
 export default function Blog() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
-    fetch('JohnsonResume.pdf').then(response => {
+    fetch('JohnsonWorkResume.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
             // Setting various property values
             let alink = document.createElement('a');
             alink.href = fileURL;
-            alink.download = 'JohnsonResume.pdf';
+            alink.download = 'JohnsonWorkResume.pdf';
             alink.click();
         })
     })
