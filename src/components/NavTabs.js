@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bulma/css/bulma.min.css';
-import '../css/style.css'
+import '../css/style.css';
+
 
 function NavTabs({ currentPage, handlePageChange }) {
 
@@ -12,6 +13,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   }
 
   return (
+    
     <nav className="navbar" role="navigation" aria-label="main navigation">
   <div className="navbar-brand">
     <h3>

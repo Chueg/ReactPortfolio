@@ -1,5 +1,5 @@
 import React from 'react';
-
+import 'bulma/css/bulma.min.css';
 import '../../css/style.css'
 
 export default function Contact() {
@@ -15,6 +15,8 @@ export default function Contact() {
     var messageInput = messageCool.value;
     var submissionResponseEl = document.querySelector("#response");
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    
 
 // Action to be performed on click store in named function
     function showResponse() {
@@ -59,16 +61,32 @@ export default function Contact() {
   return (
     <div>
       <h1>Contact Page</h1>
+      <div class="field px-6">
+         <label class="label has-text-white">Name</label>
+      <div class="control">
+        <input class="input " type="text" placeholder="Text input" id="name"/>
+      </div>
+    </div>
 
-
-      <form>
-        
-          <p>Name:<input placeholder="name" id="name" /></p>
-          <p>Email:<input placeholder="email" id="email" /></p>
-          <p>Message:<input placeholder="message" id="message" /></p>
-          <button id="submit" onClick={swilton} >Submit</button>
-          
-        </form>
+    <div class="field px-6" >
+      <label class="label has-text-white" >Email</label>
+      <div class="control has-icons-left has-icons-right">
+        <input class="input" type="email" placeholder="Email input" id="email" />
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small is-right">
+          <i class="fas fa-exclamation-triangle"></i>
+        </span>
+      </div>
+    </div>
+    <div class="field px-6" >
+      <label class="label has-text-white">Message</label>
+      <div class="control">
+        <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
+      </div>
+    </div>
+<button id="submit" onClick={swilton} >Submit</button>
         <p className='stinky'>Contact me at <br></br>Email: drewtex@gmail.com<br></br>Github: https://github.com/Chueg/</p>
         <p className = "binky"id="response"></p>
     </div>
