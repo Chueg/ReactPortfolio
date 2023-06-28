@@ -25,17 +25,21 @@ export default function Contact() {
       if(nameInput && emailInput && messageInput)
       {
         if(emailInput.match(mailformat)){
-          var response = "Thank you for your submission " + nameInput + "! We will reach out to you at " + emailInput + messageInput + ".";
+          var response = "Thank you for your submission " + nameInput + "! We will reach out to you at " + emailInput+".";
         submissionResponseEl.textContent = response;
+        window.location.href = "mailto:'drewtex@gmail.com'?subject="+nameCool.value+" Contact&body="+messageCool.value;
         nameCool.value = '';
         emailCool.value = '';
         messageCool.value = '';
+
+        
         }
         else{
           response = "please enter a valid email"
         submissionResponseEl.textContent = response;
         }
         
+
 
       }
       else if(!nameInput)
@@ -86,7 +90,7 @@ export default function Contact() {
         <textarea class="textarea" placeholder="Textarea" id="message"></textarea>
       </div>
     </div>
-<button id="submit" onClick={swilton} >Submit</button>
+<button id="submit" onClick={swilton} href='www.google.com' >Submit</button>
         <p className='stinky'>Contact me at <br></br>Email: drewtex@gmail.com<br></br>Github: https://github.com/Chueg/</p>
         <p className = "binky"id="response"></p>
     </div>
