@@ -1,9 +1,9 @@
 html{
-    background-color: #312b31;
-    color:white;
+    background-color: #B5C2B7;
+    color:black;
 }
 body{
-    color: white;
+    color: black;
 }
 footer {
     position: absolute;
@@ -85,13 +85,13 @@ h1{
   .title {
     text-align: center;
     font-size: 30px;
-    color: white;
+    color: black;
     font-weight: bold;
   }
   .subtitle {
     text-align: center;
     font-size: 18px;
-    color: white;
+    color: black;
     position: absolute;
     top: 47%;
     left: 50%;

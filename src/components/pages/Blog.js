@@ -22,6 +22,10 @@ export default function Blog() {
     <div>
       <h1>Resume</h1>
 
+      <object data="JohnsonWorkResume.pdf" type="application/pdf" width="100%" height="500px">
+      <p>Unable to display PDF file. <a href="JohnsonWorkResume.pdf">Download</a> instead.</p>
+    </object>
+    
       <button  onClick={onButtonClick} className="button is-large is-responsive binky">Download here!</button>
       
     </div>
