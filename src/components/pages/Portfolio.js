@@ -5,12 +5,35 @@ import React from 'react';
 export default function Portfolio() {
   return (
     <div>
+      
       <h1>Portfolio</h1>
       <p>
+      <div class="wrapper">
+		<a href="https://jukebox-project3.herokuapp.com/">Jukebox
+			<span>
+				<img src={"jukebox.PNG"} alt='A Jukebox' height="150" />
+			</span>
+		</a>
+		<a href="http://recipeio-project2.herokuapp.com/">RecipeIO
+			<span>
+				<img src={"recipe.PNG"} alt='The recipeIO Logo' height="150" />
+			</span>
+		</a>
+		<a href="https://github.com/Chueg/ReactPortfolio">Portfolio
+			<span>
+				<img src={"porto.gif"} alt='zerblor' height="150" />
         
+			</span>
+      
+		</a>
+    
+    
+	</div>
+
+
       </p>
       
-      <section className="binky">
+      {/* <section className="binky">
         
           <p></p>
           <div className="container" display='flex'>
@@ -49,7 +72,14 @@ export default function Portfolio() {
             <img src={"porto.gif"} alt='zerblor' className="image" style={{width:'100%'}}></img>
             
           </div>
-      </section>
+          
+
+          
+      </section> */}
+      
+
      </div>
+
+     
   );
 }

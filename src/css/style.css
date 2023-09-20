@@ -52,7 +52,7 @@ form{
 
 h1{
     font-size: 60px;
-    color: gold;
+    color: black;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -120,6 +120,36 @@ h3{
     font-family: monospace;
     padding: 20px;
 }
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+}
+.wrapper a {
+	text-decoration: none;
+	font-family: 'Titan One', cursive;
+	padding: 0 80px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 25px;
+	position: relative;
+}
+.wrapper a span {
+	position: absolute;
+	display: none;
+	z-index: 99;
+	transform: scale(0);
+	overflow: hidden;
+	border: 10px ridge #fff;
+}
+.wrapper a:hover span {
+	display: block;
+	transform: translate(-30%, -160%) scale(1.5);
+	border-radius: 10px;
+}	
+
 
 @media screen and (max-width: 1023px){
     .rampus{
